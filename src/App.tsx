@@ -1,10 +1,12 @@
 import React, { FC }  from 'react';
 import './App.css';
-import { TweetList } from './components';
+import { ErrorBoundary, TweetList } from './components';
 const App: FC = () => {
   return (
     <div className="App">
-      <TweetList />
+      <ErrorBoundary>
+        <TweetList />
+      </ErrorBoundary>
     </div>
   );
 }

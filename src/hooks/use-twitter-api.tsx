@@ -9,7 +9,7 @@ export const useTwitterApi = () => {
       const data = await response.json();
       setTweets(data.tweets.statuses);
     } catch (e) {
-      throw new Error(e);
+      setTweets(() => {throw e});
     }
   };
 
