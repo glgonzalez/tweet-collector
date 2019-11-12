@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTwitterApi } from '../../use-twitter-api';
+import { useTwitterApi } from '../../hooks';
 import {Tweet} from '../tweet';
 import Grid from '@material-ui/core/Grid';
 import {makeStyles} from '@material-ui/core/styles';
